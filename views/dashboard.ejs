@@ -1,0 +1,127 @@
+<style>
+    body{
+        margin: 0px;
+        
+
+    }
+
+    .maincontainer {
+        background: rgb(63,94,251);
+        background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);        /* background: #656262; */
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+        margin: 0px;
+        
+    }
+
+    .box {
+        background:  #ffffff;
+        width: 55%;
+        height: auto;
+        padding: 11px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.6);
+    }
+
+    .navstyle{
+        width: 100%;
+        height: 55px;
+        background: rgb(75,58,180);
+        background: linear-gradient(90deg, rgba(75,58,180,0.8288107479319853) 0%, rgba(253,29,29,0.7027603277639181) 50%, rgba(252,176,69,0.5206874986322654) 100%);
+        box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.9);
+    }
+
+    .logo{
+        width: 60px;
+        height: 50px;
+       padding-left: 10px;
+    }
+    .leftbox{
+        width: 130px;
+        height: 400px;
+        margin: 30px;
+        padding: 15px;
+        border-radius: 20px;
+        background: #ffffff;
+    }
+
+</style>
+
+
+<html>
+
+
+    
+    
+
+    <div class="maincontainer">
+        
+        <div class="navstyle">
+            <div ><img src="/images/logo1.png" alt="" class="logo"></div>
+        </div>
+
+
+        <div style="display: flex;">
+            <div class="leftbox">
+                <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+                    <img src="/images/<%=data.image%>" alt="" style="height: 80px; width: 80px; border-radius: 50%;">
+                    
+                    <div style="margin-top: 10px; font-weight:bold; color: darkblue;">
+                        <%=data.adminname%>
+                    </div>
+                    <div style="margin-top: 0px; font-size: smaller; color:dimgray;">
+                        <%=data.emailid%>
+                    </div>
+                    <div style="margin-top: 0px; font-size: smaller; color:dimgray;">
+                        +91 <%=data.mobileno%>
+                    </div>
+
+                    <div style="margin-top: 30px; font-weight:bold; color: darkblue;">
+                        <a href="/food/firstpage" target="iframe" style="text-decoration: none;">ADD FOOD</a>
+                    </div>
+
+                    <div style="margin-top: 30px; font-weight:bold; color: darkblue;">
+                        <a href="/food/menu" target="iframe" style="text-decoration: none;">FOOD LIST</a>
+                        
+                    </div>
+
+                    <div style="margin-top: 30px; font-weight:bold; color: darkblue;">
+                        <a href="/food/menu" target="iframe" style="text-decoration: none;">UPDATE FOOD</a>
+                        
+                    </div>
+
+                    <div style="margin-top: 30px; font-weight:bold; color: rgb(152, 15, 118);">
+                        <a href="/admin/logout" style="text-decoration: none;">LOG OUT</a>
+                        
+                    </div>
+
+                    
+
+
+
+
+                </div>
+            </div>
+
+            <div>
+                <iframe src="" frameborder="0" width="1050" height="635" name="iframe"></iframe>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</html>

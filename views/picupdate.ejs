@@ -1,0 +1,18 @@
+<html>
+    <form action="/food/picupdone" method="post" enctype="multipart/form-data">
+
+        <center>
+
+            <input type="hidden" name="foodid" id="foodid" value="<%=data.foodid%>">
+            <h2><%=data.foodname%></h2>
+            <img src="/images/<%=data.foodimage%>">
+            <br><br><b>SELECT NE IMAGE FOR FOOD</b>
+
+            <input type="hidden" value="<%=data.foodimage%>" name="oldimage">
+            <input type="file" name="foodimage" accept="image/*" ><br><br>
+            <input type="submit">
+
+        </center>
+
+    </form>
+</html>
